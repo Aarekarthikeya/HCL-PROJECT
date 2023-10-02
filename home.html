@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOICE TO TEXT TOOL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1 id="title">VOICE TO TEXT </h1>
+    </div>
+    <div>
+        <pre id="langheading">SELECT LANGUAGE</pre>
+    </div>
+    <div id="select">
+        <select name="input-language" id="language">
+         </select>
+      </div>
+      <div>
+        <h5 id="result">RESULT</h5>
+      </div>
+      <div class="result"
+      spellcheck="false"
+      placeholder="text is shown here">
+      <p class="interim"></p>
+    </div>
+    <div class="option">
+      <div class="option1">
+        <button class="startButton"><p>Start</p></button>
+      </div>
+      <div class="option2">
+        <button id="clear">Clear</button>
+      <button class="download" disabled="true">Download</button>
+      </div>
+      
+    </div>
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

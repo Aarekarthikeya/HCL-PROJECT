@@ -1,0 +1,29 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#wallpaper{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    h1{
+        text-align: center;
+        color:yellow;
+        padding-top: 30px;
+    }
+    .panel{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .start{
+        text-decoration: none;
+        padding: 5px;
+        border: 1px solid white;
+        background: blue;
+        color: white;
+        border-radius: 10px;
+    }

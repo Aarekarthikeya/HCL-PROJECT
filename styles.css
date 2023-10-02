@@ -1,0 +1,119 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    color: aliceblue;
+    background-color: rgb(17, 17, 18);
+}
+
+#title
+{
+    text-align: center;
+    color: bisque;
+    padding-top:20px ;
+}
+#langheading
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: azure;
+    margin-top:30px;
+    padding-left: 30px;
+}
+#language {
+    margin-top:10px;
+    padding-left: 30px;
+    width :500px; 
+    height :25px; 
+    font-size : 18px;
+    background-color: gray;
+  }
+  #select
+  {
+    padding-left: 30px;
+  }
+  #result
+  {
+    margin-top:20px;
+    color:white;
+    padding-left:30px;
+    font-size:larger;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .result
+  {
+    padding: 30px;
+    margin-top:10px;
+    height: 300px;
+    width:600px;
+    border-radius:3px;
+    border:3px solid rgb(31, 25, 25);
+    margin-left: 30px;
+  }
+  .startButton
+  {
+    cursor: pointer;
+    width:60px;
+    height:30px;
+    margin-top:20px;
+    background-color: green;
+    border:3px solid black;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:20px;
+    border-radius: 10px;
+    font-size: medium;
+  }
+  .stopButton
+  {
+    width:60px;
+    height:30px;
+    margin-top:20px;
+    background-color: red;
+
+    border:3px solid black;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    font-size: medium;
+
+  }
+
+.download
+{
+  cursor: pointer;
+background-color: rgb(44, 86, 163);
+width:100px;
+height:40px;
+border:4px solid black;
+color:white;
+font-size: medium;
+font-family:Arial, Helvetica, sans-serif;
+border-radius:10px;
+}
+#clear{
+  color: aliceblue;
+  margin-right: 10px;
+  height: 40px;
+  padding: 7px;
+  border: 1px solid black;
+  background-color: blue;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.option{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.startButton{
+  height: 40px;
+  text-align: center;
+  width: 200px;
+}
+.option2{
+  margin-right: 600px;
+}
