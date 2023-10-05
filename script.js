@@ -71,16 +71,28 @@ function voicetotext()
                 window.open("https://www.hotstar.com", "_blank");
             }
         } 
+        
         else if (query.startsWith("open flipkart and search for")) {
             const productQuery = query.replace("open flipkart and search for", "").trim();
             if (productQuery.length > 0) {
                 const flipkartURL = `https://www.flipkart.com/search?q=${encodeURIComponent(productQuery)}`;
                 window.open(flipkartURL, "_blank");
             } else {
-                // Open Flipkart homepage if no search query is provided
+                
                 window.open("https://www.flipkart.com", "_blank");
             }
         }
+        else if (query.startsWith("open spotify and search for")) {
+            const searchTerm = query.replace("open spotify and search for", "").trim();
+            if (searchTerm.length > 0) {
+                const spotifyURL = `https://open.spotify.com/search/${encodeURIComponent(searchTerm)}`;
+                window.open(spotifyURL, "_blank");
+            } else {
+                window.open("https://open.spotify.com", "_blank");
+            }
+        }
+        
+        
          else if (query.startsWith("open netflix and search for")) {
             const movieName = query.replace("open netflix and search for", "").trim();
             if (movieName.length > 0) {
@@ -115,10 +127,19 @@ function voicetotext()
                   case "open google":
                 window.open("https://www.google.com", "_blank"); 
                 break;
+                case "open spotify":
+              window.open("https://open.spotify.com", "_blank");
+                  break;
+
                    case "open whatsapp":
-        window.open("https://web.whatsapp.com", "_blank");
-        break;
-                default:  
+                    window.open("https://web.whatsapp.com", "_blank");
+                    break;
+                    case  "clear all":
+                        result.innerHTML="";
+                        downloadbtn.disabled=true;
+                         break;
+
+                     default:  
                     result.querySelector("p").remove();
                     break;
                     
